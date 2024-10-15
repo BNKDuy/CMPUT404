@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:," />
+    <link rel="icon" href="data:,">
     <title>Clock App</title>
 
     <style>
@@ -852,15 +852,13 @@
             <!-- The minutes has a minimum value of 0 and a maximum value of 59 --> 
             <!-- The default is 0-->
             <section>
+                <h3>Time input:</h3>
                 <label for="minutes">Minutes:</label>
                 <input type="number" id="minutes" min="0" max="59" value="0">
-            </section>    
-
             <!-- Seconds Input Section -->
             <!-- The seconds input field is used to input the seconds for the timer -->
             <!-- The seconds has a minimum value of 0 and a maximum value of 59 -->
             <!-- The default is 0-->
-            <section>
                 <label for="seconds">Seconds:</label>
                 <input type="number" id="seconds" min="0" max="59" value="0">
             </section>
@@ -868,6 +866,7 @@
             <!-- Timer checkbox -->
             <!-- The timer checkbox is used to start and stop the timer -->
             <section class="timer-checkbox-section">
+                <h3>Timer control:</h3>
                 <label for="timer-checkbox">Timer:</label>
                 <input type="checkbox" id="timer-checkbox">
             </section>
@@ -876,7 +875,7 @@
         <!-- Stopwatch Section -->
         <section id="stopwatch-section" class="card">
             <h2>Stopwatch</h2>
-            <time>0:00:00:000</time>
+            <time>0:00:00.000</time>
 
             <!-- Buttons Section -->
             <!-- These button will be use to control the stopwatch functionality -->
@@ -884,6 +883,7 @@
             <!-- The stop button is used to stop the stopwatch -->
             <!-- The reset button is used to reset the stopwatch (make the stop watch become 0) -->
             <section class="button">
+                <h3>Stopwatch control:</h3>
                 <button id="stopwatch-start-button">Start</button>
                 <button id="stopwatch-stop-button">Stop</button>
                 <button id="stopwatch-reset-button">Reset</button>
@@ -904,16 +904,17 @@
             <!-- This message is hidden by default and will only be displayed when the countdown is over -->
             <p class="countdown-hidden-message" id="countdown-message">Countdown is over!</p>
 
-            <!-- Countdown Date Input Section -->
-            <!-- The date input field is used to input the date for the countdown -->
+           
             <section>
+                <h3>Date and Time input:</h3>
+                
+                <!-- Countdown Date Input Section -->
+                <!-- The date input field is used to input the date for the countdown -->
                 <label for="countdown-date-input">Select date:</label>
                 <input type="date" id="countdown-date-input">
-            </section>
 
-            <!-- Countdown Time Input Section -->
-            <!-- The time input field is used to input the time for the countdown -->
-            <section>
+                <!-- Countdown Time Input Section -->
+                <!-- The time input field is used to input the time for the countdown -->
                 <label for="countdown-time-input">Select time:</label>
                 <input type="time" id="countdown-time-input">
             </section>
@@ -923,6 +924,7 @@
             <!-- The start button is used to start the countdown -->
             <!-- The cancel button is used to cancel the countdown (it will stop the current countdown and allow user to change the time) -->
             <section class="button">
+                <h3>Countdown control:</h3>
                 <button id="countdown-start-button">Start</button>
                 <button id="countdown-cancel-button">Cancel</button>
             </section>
